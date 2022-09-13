@@ -20,7 +20,7 @@ driver = webdriver.Firefox(executable_path=geckodriver_path,
                            options=options,
                            firefox_profile=fp)
 
-driver.set_page_load_timeout(45) # 15 or 25 seconds not enough for tor
+driver.set_page_load_timeout(45)  # 15 or 25 seconds not enough for tor
 driver.set_window_size(1080, 1080)
 
 def take_screen(link):
